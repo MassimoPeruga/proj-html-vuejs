@@ -5,5 +5,7 @@ import App from './App.vue';
 import './assets/scss/style.scss';
 //file di partenza js
 import './assets/js/myscript'
+// file di partenza FontAwesome
+import { FontAwesomeIcon } from './assets/js/_partials/_fontAwesome';
 
-createApp(App).mount('#app');
+createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');

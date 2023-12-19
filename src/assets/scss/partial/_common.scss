@@ -5,3 +5,11 @@ COMMON
 */
 
 @use './variables' as *;
+
+img {
+    display: block !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
