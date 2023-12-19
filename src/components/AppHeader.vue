@@ -8,13 +8,13 @@ export default {
         return {
             logoPath: '../../public/logo-2x.png',
             links: [
-                { text: 'Home', url: '/', isActive: false },
+                { text: 'Home', url: '/', isActive: true },
                 { text: 'Apple', url: '/', isActive: false },
                 { text: 'Microsoft', url: '/', isActive: false },
                 { text: 'Contact', url: '/', isActive: false },
                 { text: 'Android', url: '/', isActive: false },
                 { text: 'Forums', url: '/', isActive: false },
-                { text: 'Contact Us', url: '/', isActive: true },
+                { text: 'Contact Us', url: '/', isActive: false },
 
             ],
         }
