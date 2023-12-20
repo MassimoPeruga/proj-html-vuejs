@@ -39,6 +39,7 @@ export default {
         font-size: 1.75rem;
         font-weight: 300;
         margin-bottom: 45px;
+        letter-spacing: 2px;
     }
 }
 </style>
