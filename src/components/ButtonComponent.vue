@@ -27,7 +27,8 @@ button {
     align-items: center;
 
     &.ms_big {
-        padding: 20px 40px;
+        padding: 18px 45px;
+        font-size: 1.25rem;
     }
 
     &.ms_small {
