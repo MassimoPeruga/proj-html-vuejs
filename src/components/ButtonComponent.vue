@@ -28,7 +28,6 @@ button {
 
     &.ms_big {
         padding: 18px 45px;
-        font-size: 1.25rem;
     }
 
     &.ms_small {

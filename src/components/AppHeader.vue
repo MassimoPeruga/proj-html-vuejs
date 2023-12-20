@@ -42,7 +42,8 @@ export default {
 @use '../assets/scss/partial/variables' as *;
 
 header {
-    height: 100px;
+    height: 90px;
+    padding: 16px 0;
     background-color: $eastern-blue-color;
     color: $white-color;
     position: fixed;

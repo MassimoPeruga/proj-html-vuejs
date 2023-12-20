@@ -22,24 +22,24 @@ export default {
 @use '../assets/scss/partial/variables' as *;
 
 .ms_jumbo {
-    padding: 275px 0;
+    height: 850px;
+    padding-top: 300px;
     background-image: url(../assets/img/home_slider_bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     color: $white-color;
 
     h1 {
-        font-size: 9rem;
+        font-size: 6rem;
         font-weight: 800;
-        margin-bottom: 6px;
-        letter-spacing: 8px;
+        margin-bottom: 40px;
     }
 
     h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         font-weight: 300;
-        margin-bottom: 45px;
-        letter-spacing: 2px;
+        margin-bottom: 35px;
     }
 }
 </style>

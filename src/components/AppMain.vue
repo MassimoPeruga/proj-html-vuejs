@@ -16,6 +16,6 @@ export default {
 
 <style lang="scss" scoped>
 main {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 </style>
