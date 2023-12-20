@@ -10,8 +10,8 @@ export default {
 <template>
     <button :class="[dimention, color]">
         {{ text }}
-        <font-awesome-icon icon="fa-solid fa-chevron-right" v-if="icon === 'chevron'" />
-        <font-awesome-icon icon="fa-solid fa-right-long" v-if="icon === 'arrow'" />
+        <font-awesome-icon icon="fa-solid fa-chevron-right" v-if="icon === 'chevron'" class="ms_icon" />
+        <font-awesome-icon icon="fa-solid fa-right-long" v-if="icon === 'arrow'" class="ms_icon" />
     </button>
 </template>
 
@@ -23,6 +23,8 @@ button {
     color: inherit;
     font-weight: bold;
     border: none;
+    display: flex;
+    align-items: center;
 
     &.ms_big {
         padding: 20px 40px;
@@ -38,6 +40,11 @@ button {
 
     &.ms_light {
         background-color: $eastern-blue-color;
+    }
+
+    .ms_icon {
+        margin-left: 10px;
+        font-size: 12px;
     }
 }
 </style>
