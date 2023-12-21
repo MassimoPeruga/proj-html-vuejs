@@ -21,7 +21,5 @@ h2 {
     position: relative;
     padding-bottom: 40px;
     margin-bottom: 64px;
-    font-size: 48px;
-    font-weight: 800;
 }
 </style>

@@ -6,4 +6,17 @@ TYPOGRAPHY
 
 body {
     font-family: 'Fira Sans', sans-serif !important;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 800;
+    }
+
+    h5 {
+        text-transform: uppercase !important;
+        letter-spacing: 3px !important;
+        font-size: 14px !important;
+        font-weight: 800 !important;
+        margin-bottom: 30px !important;
+    }
 }

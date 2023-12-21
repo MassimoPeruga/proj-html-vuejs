@@ -3,6 +3,7 @@ import Jumbo from './Jumbo.vue';
 import Paragraph from './Paragraph.vue';
 import News from './News/News.vue';
 import CallToAction from './CallToAction.vue';
+import SignUp from './SignUp.vue';
 export default {
     name: 'Main',
     components: {
@@ -10,6 +11,7 @@ export default {
         Paragraph,
         News,
         CallToAction,
+        SignUp,
     }
 };
 </script>
@@ -21,6 +23,7 @@ export default {
         <News />
         <CallToAction :text="'Read our blog'" />
         <CallToAction :text="'Go to our forum'" />
+        <SignUp />
     </main>
 </template>
 
