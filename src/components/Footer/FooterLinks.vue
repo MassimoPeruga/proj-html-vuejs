@@ -1,6 +1,14 @@
 <script>
 export default {
     name: 'Links Section',
+    methods: {
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        },
+    },
 };
 </script>
 
@@ -24,6 +32,7 @@ export default {
                 </li>
             </ul>
         </div>
+        <button @click="scrollToTop"><font-awesome-icon icon="fa-solid fa-chevron-up" /></button>
     </section>
 </template>
 
@@ -92,6 +101,16 @@ section {
 
             }
         }
+    }
+
+    button {
+        position: fixed;
+        right: 70px;
+        bottom: 0;
+        padding: 7px 14px;
+        background-color: $shark-darkmuted-color;
+        color: $white-color;
+        border-radius: 5px 5px 0 0;
     }
 }
 </style>
