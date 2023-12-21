@@ -7,7 +7,7 @@ export default {
 
 <template>
     <div class="text-center">
-        <h4>Phasellus eget metus</h4>
+        <h5>Phasellus eget metus</h5>
         <h2 class="pseudo_element">{{ title }}</h2>
     </div>
 </template>
