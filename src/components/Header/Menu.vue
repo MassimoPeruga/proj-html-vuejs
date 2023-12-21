@@ -40,6 +40,10 @@ ul {
             left: 0;
             z-index: 99;
         }
+
+        a:hover {
+            text-decoration: underline !important;
+        }
     }
 }
 </style>

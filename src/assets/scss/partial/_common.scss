@@ -10,10 +10,6 @@ img {
     display: block !important;
 }
 
-a:hover {
-    text-decoration: underline !important;
-}
-
 .pseudo_element::after {
     content: '';
     height: 3px;

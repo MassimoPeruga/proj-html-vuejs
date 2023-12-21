@@ -1,5 +1,5 @@
 <script>
-import Titles from './Titles.vue';
+import Titles from '../Titles.vue';
 import Card from './Card.vue';
 import Article from './Article.vue';
 import List from './List.vue';

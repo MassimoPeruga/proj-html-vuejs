@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 div {
-    margin-top: 120px;
+    padding-top: 120px;
 }
 
 h2 {
