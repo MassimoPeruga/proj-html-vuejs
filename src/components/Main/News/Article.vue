@@ -33,7 +33,6 @@ article {
     }
 
     h3 {
-        font-size: 40px;
         font-weight: 800;
         margin-bottom: 38px;
     }

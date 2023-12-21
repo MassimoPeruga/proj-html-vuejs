@@ -5,6 +5,7 @@ import News from './News/News.vue';
 import CallToAction from './CallToAction.vue';
 import Forums from './Forums.vue';
 import SignUp from './SignUp.vue';
+import Form from './Form.vue';
 export default {
     name: 'Main',
     components: {
@@ -14,6 +15,7 @@ export default {
         CallToAction,
         Forums,
         SignUp,
+        Form,
     }
 };
 </script>
@@ -27,6 +29,7 @@ export default {
         <Forums />
         <CallToAction :text="'Go to our forum'" />
         <SignUp />
+        <Form />
     </main>
 </template>
 
