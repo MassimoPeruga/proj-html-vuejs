@@ -1,9 +1,9 @@
 <script>
-import ButtonComponent from './ButtonComponent.vue';
+import Button from '../Common/Button.vue';
 export default {
     name: 'Jumbotron',
     components: {
-        ButtonComponent,
+        Button,
     }
 };
 </script>
@@ -13,18 +13,18 @@ export default {
         <div class="container">
             <h1>Tech Forum!</h1>
             <h3>Discuss all the latest technology news and trands</h3>
-            <ButtonComponent :text="'Get Avada now!'" :dimention="'ms_big'" :color="'ms_light'" :icon="'chevron'" />
+            <Button :text="'Get Avada now!'" :dimention="'ms_big'" :color="'ms_light'" :icon="'chevron'" />
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partial/variables' as *;
+@use '../../assets/scss/partial/variables' as *;
 
 .ms_jumbo {
     height: 850px;
     padding-top: 300px;
-    background-image: url(../assets/img/home_slider_bg.jpg);
+    background-image: url(../../assets/img/home_slider_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

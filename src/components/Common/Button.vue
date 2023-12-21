@@ -16,7 +16,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partial/variables' as *;
+@use '../../assets/scss/partial/variables' as *;
 
 button {
     text-transform: uppercase;

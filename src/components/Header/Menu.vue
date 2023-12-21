@@ -14,7 +14,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partial/variables' as *;
+@use '../../assets/scss/partial/variables' as *;
 
 ul {
     display: flex;
@@ -36,8 +36,9 @@ ul {
             font-size: 2rem;
             rotate: 45deg;
             position: absolute;
-            bottom: -23px;
+            bottom: -38px;
             left: 0;
+            z-index: 99;
         }
     }
 }

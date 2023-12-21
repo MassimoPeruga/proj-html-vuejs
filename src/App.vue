@@ -1,22 +1,22 @@
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
+import Header from './components/Header/Header.vue';
+import Main from './components/Main/Main.vue';
+import Footer from './components/Footer/Footer.vue';
 export default {
   name: 'Avada Forum',
 
   components: {
-    AppHeader,
-    AppMain,
-    AppFooter,
+    Header,
+    Main,
+    Footer,
   },
 };
 </script>
 
 <template>
-  <AppHeader />
-  <AppMain />
-  <AppFooter />
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
 <style lang="scss"></style>
