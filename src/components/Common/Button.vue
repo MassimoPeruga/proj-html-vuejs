@@ -1,5 +1,4 @@
 <script>
-import { text } from '@fortawesome/fontawesome-svg-core';
 
 export default {
     name: 'Button Component',

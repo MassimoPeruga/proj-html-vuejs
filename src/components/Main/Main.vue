@@ -2,12 +2,14 @@
 import Jumbo from './Jumbo.vue';
 import Paragraph from './Paragraph.vue';
 import News from './News/News.vue';
+import CallToAction from './CallToAction.vue';
 export default {
     name: 'Main',
     components: {
         Jumbo,
         Paragraph,
         News,
+        CallToAction,
     }
 };
 </script>
@@ -17,6 +19,8 @@ export default {
         <Jumbo />
         <Paragraph />
         <News />
+        <CallToAction :text="'Read our blog'" />
+        <CallToAction :text="'Go to our forum'" />
     </main>
 </template>
 
