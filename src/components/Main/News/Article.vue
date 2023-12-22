@@ -1,19 +1,32 @@
 <script>
+// Importa il componente Button 
 import Button from '../../Common/Button.vue';
+
 export default {
+    // Nome del componente
     name: 'Article',
-    props: ['size', 'img', 'title', 'subtitle', 'description',],
+
+    // Props ricevute dal componente padre
+    props: ['size', 'img', 'title', 'subtitle', 'description'],
+
+    // Dichiarazione dei componenti utilizzati
     components: {
         Button,
-    }
+    },
 };
 </script>
 
 <template>
     <article :style="{ backgroundImage: `url(${img})` }">
         <h5 :class="{ 'ms_higher': size === 'big' }">{{ subtitle }}</h5>
+
+        <!-- Titolo dell'articolo -->
         <h3>{{ title }}</h3>
+
+        <!-- Descrizione dell'articolo -->
         <p>{{ description }}</p>
+
+        <!-- Bottone con testo, dimensione, colore e icona dinamici -->
         <Button :text="'Read more'" :dimention="'ms_big'" :color="'ms_dark'" :icon="'chevron'" />
     </article>
 </template>

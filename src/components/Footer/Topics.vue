@@ -1,6 +1,8 @@
 <script>
 export default {
+    // Nome del componente
     name: 'Topics Section',
+    // Props ricevute dal componente padre
     props: ['sections',],
 };
 </script>
@@ -9,14 +11,21 @@ export default {
     <section>
         <div class="container">
             <ul class="row g-5">
+                <!-- Itera sulle sezioni passate come prop -->
                 <li v-for="section in sections" class="col-3">
                     <div>
+                        <!-- Titolo della sezione -->
                         <h4>{{ section.title }}</h4>
+                        <!-- Mostra il paragrafo se presente -->
                         <p v-if="section.paragraph">{{ section.paragraph }}</p>
+                        <!-- Se presentI mostra gli argomenti della sezione -->
                         <ul v-if="section.topics" class="p-0">
+                            <!-- Itera sugli argomenti della sezione -->
                             <li v-for="topic in section.topics" class="ms_accordion">
                                 <div>
+                                    <!-- Titolo dell'argomento -->
                                     <h5 class="m-0">{{ topic.title }}</h5>
+                                    <!-- Paragrafo dell'argomento -->
                                     <p>{{ topic.paragraph }}</p>
                                 </div>
                             </li>
@@ -29,6 +38,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+/* Importo le variabili definite in _variables.scss */
 @use '../../assets/scss/partial/variables' as *;
 
 section {

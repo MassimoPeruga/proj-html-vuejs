@@ -1,12 +1,16 @@
 <script>
+// Importa i componenti necessari 
 import Topics from './Topics.vue';
 import FooterLinks from './FooterLinks.vue';
 export default {
+    // Nome del componente
     name: 'Footer',
+    // Dichiarazione dei componenti utilizzati
     components: {
         Topics,
         FooterLinks,
     },
+    // Dati del componente
     data() {
         return {
             sections: [
@@ -85,9 +89,9 @@ export default {
 
 <template>
     <footer>
+        <!-- Componente Topics con le sezioni definite nei dati -->
         <Topics :sections="this.sections" />
+        <!-- Componente FooterLinks -->
         <FooterLinks />
     </footer>
 </template>
-
-<style lang="scss" scoped></style>

@@ -1,12 +1,17 @@
 <script>
+// Importa il componente Titles
 import Titles from './Titles.vue';
 export default {
+    // Nome del componente
     name: 'Forums Section',
+    // Dichiarazione dei componenti utilizzati
     components: {
         Titles,
     },
+    // Dati locali del componente
     data() {
         return {
+            // Array di oggetti link per le sezioni del forum
             links: [
                 {
                     icon: 'fa-solid fa-file-lines',
@@ -49,8 +54,10 @@ export default {
 <template>
     <section>
         <div class="container">
+            <!-- Utilizzo del componente Titles -->
             <Titles :title="'Forum Sections'" />
             <ul class="row g-5">
+                <!-- Itero per ogni oggetto dell'array -->
                 <li v-for="link in this.links" class="col-3">
                     <a href="/">
                         <div>
@@ -65,6 +72,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+/* Importo le variabili definite in _variables.scss */
 @use '../../assets/scss/partial/variables' as *;
 
 section {

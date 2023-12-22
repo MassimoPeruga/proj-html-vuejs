@@ -1,6 +1,8 @@
 <script>
 export default {
+    // Nome del componente
     name: 'Links Section',
+    // Metodi del componente
     methods: {
         scrollToTop() {
             window.scrollTo({
@@ -15,28 +17,47 @@ export default {
 <template>
     <section>
         <div class="container">
-            <p><span>&#169;</span> Copyright 2012-2020 | Avada Theme by <a href="/">Theme Fusion</a> | All Rights Reserved |
-                Poered by <a href="/">WordPress</a></p>
+            <!-- Copyright e informazioni sul tema -->
+            <p>
+                <span>&#169;</span> Copyright 2012-2020 | Avada Theme by
+                <a href="/">Theme Fusion</a> | All Rights Reserved | Powered by
+                <a href="/">WordPress</a>
+            </p>
+
+            <!-- Icone dei social media -->
             <ul>
                 <li>
-                    <a href="/" class="facebook"><font-awesome-icon icon="fa-brands fa-facebook-f" class="ms_icon" /></a>
+                    <a href="/" class="facebook">
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" class="ms_icon" />
+                    </a>
                 </li>
                 <li>
-                    <a href="/" class="twitter"><font-awesome-icon icon="fa-brands fa-x-twitter" class="ms_icon" /></a>
+                    <a href="/" class="twitter">
+                        <font-awesome-icon icon="fa-brands fa-x-twitter" class="ms_icon" />
+                    </a>
                 </li>
                 <li>
-                    <a href="/" class="instagram"><font-awesome-icon icon="fa-brands fa-instagram" class="ms_icon" /></a>
+                    <a href="/" class="instagram">
+                        <font-awesome-icon icon="fa-brands fa-instagram" class="ms_icon" />
+                    </a>
                 </li>
                 <li>
-                    <a href="/" class="youtube"><font-awesome-icon icon="fa-brands fa-youtube" class="ms_icon" /></a>
+                    <a href="/" class="youtube">
+                        <font-awesome-icon icon="fa-brands fa-youtube" class="ms_icon" />
+                    </a>
                 </li>
             </ul>
         </div>
-        <button @click="scrollToTop"><font-awesome-icon icon="fa-solid fa-chevron-up" /></button>
+
+        <!-- Bottone per tornare in cima -->
+        <button @click="scrollToTop">
+            <font-awesome-icon icon="fa-solid fa-chevron-up" />
+        </button>
     </section>
 </template>
 
 <style lang="scss" scoped>
+/* Importo le variabili definite in _variables.scss */
 @use '../../assets/scss/partial/variables' as *;
 
 section {

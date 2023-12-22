@@ -1,16 +1,20 @@
 <script>
+// Importa i componenti necessari
 import Titles from '../Titles.vue';
 import Card from './Card.vue';
 import Article from './Article.vue';
 import List from './List.vue';
 export default {
+    // Nome del componente
     name: 'News Section',
+    // Dichiarazione dei componenti utilizzati
     components: {
         Titles,
         Card,
         Article,
         List,
     },
+    // Dati del componente (contiene un array di oggetti notizie)
     data() {
         return {
             news: [
@@ -120,18 +124,25 @@ export default {
 <template>
     <section>
         <div class="container">
+            <!-- Componente Titolo -->
             <Titles :title="'All the latest news'" />
+
+            <!-- Lista di notizie con diverse visualizzazioni (card, articolo, lista) -->
             <ul class="row row-cols-3 gx-4 gy-5">
+                <!-- Itera attraverso le notizie nell'array -->
                 <li v-for="post in news" :class="post.class">
+                    <!-- Visualizzazione della notizia come 'card' -->
                     <Card v-if="post.type === 'card'" :img="`/${post.image}`" :title="post.title" :date="post.date"
                         :comments="post.comments" :description="post.description" />
+
+                    <!-- Visualizzazione della notizia come 'article' -->
                     <Article v-if="post.type === 'article'" :size="post.size" :img="`/${post.image}`" :title="post.title"
                         :subtitle="post.subtitle" :description="post.description" />
+
+                    <!-- Visualizzazione dei tutorial come 'list' -->
                     <List v-if="post.type === 'list'" :list="post" />
                 </li>
             </ul>
         </div>
     </section>
 </template>
-
-<style lang="scss" scoped></style>

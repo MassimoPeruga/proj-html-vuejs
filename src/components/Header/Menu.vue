@@ -1,19 +1,25 @@
 <script>
 export default {
+    // Nome del componente
     name: 'Menu',
-    props: ['links',],
+
+    // Props ricevute dal componente genitore
+    props: ['links'],
 };
 </script>
 
 <template>
     <ul>
+        <!-- Itera attraverso gli elementi dell'array di link -->
         <li v-for="link in links" :class="{ 'ms_active': link.isActive }">
+            <!-- Link con URL dinamico e testo -->
             <a :href="link.url">{{ link.text }}</a>
         </li>
     </ul>
 </template>
 
 <style lang="scss" scoped>
+/* Importo le variabili definite in _variables.scss */
 @use '../../assets/scss/partial/variables' as *;
 
 ul {
@@ -28,6 +34,7 @@ ul {
         position: relative;
         height: 100%;
 
+        /* Stile aggiunto se il link è attivo */
         &.ms_active::after {
             content: '◢';
             color: $eastern-blue-color;

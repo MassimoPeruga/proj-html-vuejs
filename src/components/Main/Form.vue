@@ -1,10 +1,15 @@
 <script>
+// Importa il componente Button 
 import Button from '../Common/Button.vue';
+
 export default {
+    // Nome del componente
     name: 'Form section',
+
+    // Dichiarazione dei componenti utilizzati
     components: {
         Button,
-    }
+    },
 };
 </script>
 
@@ -12,10 +17,15 @@ export default {
     <section>
         <div class="ms_container">
             <h3>Subscribe to our Newsletter</h3>
+
+            <!-- Modulo di iscrizione alla newsletter -->
             <form class="row">
+                <!-- Campo di input per l'indirizzo email -->
                 <div class="col-8">
                     <input type="email" required placeholder="Insert your email*">
                 </div>
+
+                <!-- Pulsante di invio (utilizzando il componente Button) -->
                 <div class="col-4">
                     <Button :text="'Send'" :dimention="'ms_big'" :color="'ms_dark'" />
                 </div>
@@ -25,6 +35,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+/* Importo le variabili definite in _variables.scss */
 @use '../../assets/scss/partial/variables' as *;
 
 section {

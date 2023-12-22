@@ -1,11 +1,15 @@
 <script>
 export default {
+    // Nome del componente
     name: 'Logo',
-    props: ['imgSrc',],
+
+    // Path dinamica ricevuta dal componente genitore
+    props: ['imgSrc'],
 };
 </script>
 
 <template>
+    <!-- Immagine del logo con percorso dinamico -->
     <img :src="imgSrc" alt="Logo">
 </template>
 

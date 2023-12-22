@@ -1,13 +1,17 @@
 <script>
 export default {
-    name: 'Paragraph Section',
+    // Nome del componente
+    name: 'ParagraphSection',
 };
 </script>
 
 <template>
     <section>
         <div class="container">
-            <h5>Avada Forum is th place to be</h5>
+            <!-- Titolo della sezione -->
+            <h5>Avada Forum is the place to be</h5>
+
+            <!-- Paragrafo descrittivo -->
             <p>
                 In quis lectus sed leo elementum faucibus in dapibus dictum.
                 Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus
@@ -18,6 +22,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+/* Importo le variabili definite in _variables.scss */
 @use '../../assets/scss/partial/variables' as *;
 
 section {

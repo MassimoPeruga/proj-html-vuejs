@@ -1,6 +1,8 @@
 <script>
 export default {
+    // Nome del componente
     name: 'Heading of a Section',
+    // Props ricevute dal componente padre
     props: ['title',],
 };
 </script>
@@ -9,6 +11,7 @@ export default {
     <div class="text-center">
         <h5>Phasellus eget metus</h5>
         <h2 class="pseudo_element">{{ title }}</h2>
+        <!-- Stili dello Pseudo elemento per la linea decorativa definiti nel file _common.scss -->
     </div>
 </template>
 
