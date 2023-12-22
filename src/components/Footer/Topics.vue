@@ -120,8 +120,9 @@ section {
 
         &::before {
             content: url('../../assets/img/chevron-right-solid.svg');
+            color: inherit;
             position: absolute;
-            top: 4px;
+            top: 2px;
             left: 0;
         }
 
