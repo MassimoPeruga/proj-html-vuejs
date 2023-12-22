@@ -112,17 +112,16 @@ section {
     }
 
     .ms_accordion {
-        padding: 0 12px;
+        padding-left: 16px;
         position: relative;
         border-bottom: 1px solid $silver-calice-color;
         padding-bottom: 18px;
         margin-bottom: 18px;
 
         &::before {
-            content: '🢒';
-            font-size: 32px;
+            content: url('../../assets/img/chevron-right-solid.svg');
             position: absolute;
-            top: -12px;
+            top: 4px;
             left: 0;
         }
 
